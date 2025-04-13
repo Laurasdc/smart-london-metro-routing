@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_20e55b8789cea40ad7d2c41939994ef9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_20e55b8789cea40ad7d2c41939994ef9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_20e55b8789cea40ad7d2c41939994ef9 = L.map(
+                "map_20e55b8789cea40ad7d2c41939994ef9",
+                {
+                    center: [51.5308, -0.1238],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_13d4e511dbc733eea4aea082d973d756 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_13d4e511dbc733eea4aea082d973d756.addTo(map_20e55b8789cea40ad7d2c41939994ef9);
+        
+    
+            var marker_8fafb273a13325148bd0f19967d2186b = L.marker(
+                [51.5308, -0.1238],
+                {
+}
+            ).addTo(map_20e55b8789cea40ad7d2c41939994ef9);
+        
+    
+            var icon_a88933d9f6255d82e6890ea231e41d77 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0cc256ac8f88004a32358a663558b154 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d174d67673770b19e3a16c6881d65416 = $(`<div id="html_d174d67673770b19e3a16c6881d65416" style="width: 100.0%; height: 100.0%;"><b>King's Cross</b><br>Linha: Northern</div>`)[0];
+                popup_0cc256ac8f88004a32358a663558b154.setContent(html_d174d67673770b19e3a16c6881d65416);
+            
+        
+
+        marker_8fafb273a13325148bd0f19967d2186b.bindPopup(popup_0cc256ac8f88004a32358a663558b154)
+        ;
+
+        
+    
+    
+                marker_8fafb273a13325148bd0f19967d2186b.setIcon(icon_a88933d9f6255d82e6890ea231e41d77);
+            
+    
+            var marker_f42807f73b5fef85ca249f99f6adaccd = L.marker(
+                [51.5281, -0.1337],
+                {
+}
+            ).addTo(map_20e55b8789cea40ad7d2c41939994ef9);
+        
+    
+            var icon_a5be60fc20a6458675a0a0ddf4962f57 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "subway",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc9c728368c73cbc4aacfb5a7f55cf4e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aec46fb87c20e009180dcbb0c333a67d = $(`<div id="html_aec46fb87c20e009180dcbb0c333a67d" style="width: 100.0%; height: 100.0%;"><b>Euston</b><br>Linha: Northern</div>`)[0];
+                popup_dc9c728368c73cbc4aacfb5a7f55cf4e.setContent(html_aec46fb87c20e009180dcbb0c333a67d);
+            
+        
+
+        marker_f42807f73b5fef85ca249f99f6adaccd.bindPopup(popup_dc9c728368c73cbc4aacfb5a7f55cf4e)
+        ;
+
+        
+    
+    
+                marker_f42807f73b5fef85ca249f99f6adaccd.setIcon(icon_a5be60fc20a6458675a0a0ddf4962f57);
+            
+    
+            var marker_6eddb4954d922275cccf95b78afffe45 = L.marker(
+                [51.4965, -0.1447],
+                {
+}
+            ).addTo(map_20e55b8789cea40ad7d2c41939994ef9);
+        
+    
+            var icon_458708f1928ed19b77eefbe945ec26bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9af77e0b22de15bb04a9a48ba887d662 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d747bbb24bdfbc011d7c88f361314749 = $(`<div id="html_d747bbb24bdfbc011d7c88f361314749" style="width: 100.0%; height: 100.0%;"><b>Victoria Station</b><br>Linha: Northern</div>`)[0];
+                popup_9af77e0b22de15bb04a9a48ba887d662.setContent(html_d747bbb24bdfbc011d7c88f361314749);
+            
+        
+
+        marker_6eddb4954d922275cccf95b78afffe45.bindPopup(popup_9af77e0b22de15bb04a9a48ba887d662)
+        ;
+
+        
+    
+    
+                marker_6eddb4954d922275cccf95b78afffe45.setIcon(icon_458708f1928ed19b77eefbe945ec26bd);
+            
+    
+            var poly_line_d33d20f48587abe0268424886359e19e = L.polyline(
+                [[51.5308, -0.1238], [51.5281, -0.1337], [51.4965, -0.1447]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_20e55b8789cea40ad7d2c41939994ef9);
+        
+</script>
+</html>

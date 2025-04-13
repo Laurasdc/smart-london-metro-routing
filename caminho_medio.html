@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a6fc9037c40d8c12618ac2917937a0aa {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a6fc9037c40d8c12618ac2917937a0aa" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a6fc9037c40d8c12618ac2917937a0aa = L.map(
+                "map_a6fc9037c40d8c12618ac2917937a0aa",
+                {
+                    center: [51.5308, -0.1238],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ea9d3978811743557d81323b34084964 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_ea9d3978811743557d81323b34084964.addTo(map_a6fc9037c40d8c12618ac2917937a0aa);
+        
+    
+            var marker_83bb62423e401910ee4f8f5472df072f = L.marker(
+                [51.5308, -0.1238],
+                {
+}
+            ).addTo(map_a6fc9037c40d8c12618ac2917937a0aa);
+        
+    
+            var icon_eeb023c41f99c65e991a04936d9132fd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "home",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_13b0123aff917ea309a8281699efe97b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_631b7fcd84489894d16710256af1f532 = $(`<div id="html_631b7fcd84489894d16710256af1f532" style="width: 100.0%; height: 100.0%;"><b>King's Cross</b><br>Linha: Victoria</div>`)[0];
+                popup_13b0123aff917ea309a8281699efe97b.setContent(html_631b7fcd84489894d16710256af1f532);
+            
+        
+
+        marker_83bb62423e401910ee4f8f5472df072f.bindPopup(popup_13b0123aff917ea309a8281699efe97b)
+        ;
+
+        
+    
+    
+                marker_83bb62423e401910ee4f8f5472df072f.setIcon(icon_eeb023c41f99c65e991a04936d9132fd);
+            
+    
+            var marker_bca355d42d05651ed0fdbde085259826 = L.marker(
+                [51.5154, -0.141],
+                {
+}
+            ).addTo(map_a6fc9037c40d8c12618ac2917937a0aa);
+        
+    
+            var icon_3ee0dc4620be490666b072be985c65c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "subway",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b83119c1d3eee5588c3ff951eb1046b8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cb429b51135edf83901170ff0ead2ecd = $(`<div id="html_cb429b51135edf83901170ff0ead2ecd" style="width: 100.0%; height: 100.0%;"><b>Oxford Circus</b><br>Linha: Victoria</div>`)[0];
+                popup_b83119c1d3eee5588c3ff951eb1046b8.setContent(html_cb429b51135edf83901170ff0ead2ecd);
+            
+        
+
+        marker_bca355d42d05651ed0fdbde085259826.bindPopup(popup_b83119c1d3eee5588c3ff951eb1046b8)
+        ;
+
+        
+    
+    
+                marker_bca355d42d05651ed0fdbde085259826.setIcon(icon_3ee0dc4620be490666b072be985c65c0);
+            
+    
+            var marker_367326297cae8b27d5847b632ea319f9 = L.marker(
+                [51.5067, -0.1428],
+                {
+}
+            ).addTo(map_a6fc9037c40d8c12618ac2917937a0aa);
+        
+    
+            var icon_e7d9aa9d3f3a9b0a8fec05babd8122ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "subway",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_036dda7c849129b90b1d3ad0d0b2c2e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8165d1ddd4cd8886315b947ddc8d4827 = $(`<div id="html_8165d1ddd4cd8886315b947ddc8d4827" style="width: 100.0%; height: 100.0%;"><b>Green Park</b><br>Linha: Victoria</div>`)[0];
+                popup_036dda7c849129b90b1d3ad0d0b2c2e8.setContent(html_8165d1ddd4cd8886315b947ddc8d4827);
+            
+        
+
+        marker_367326297cae8b27d5847b632ea319f9.bindPopup(popup_036dda7c849129b90b1d3ad0d0b2c2e8)
+        ;
+
+        
+    
+    
+                marker_367326297cae8b27d5847b632ea319f9.setIcon(icon_e7d9aa9d3f3a9b0a8fec05babd8122ba);
+            
+    
+            var marker_df1841c10c38f6e81253c6e6eee17fa5 = L.marker(
+                [51.4965, -0.1447],
+                {
+}
+            ).addTo(map_a6fc9037c40d8c12618ac2917937a0aa);
+        
+    
+            var icon_fb8b7b9351285e371249d2f5e2a74a0c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flag",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aabd191df30b035912cd4b5ddb1c6e15 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f812211f6f1a950eb9307d6b81df57b6 = $(`<div id="html_f812211f6f1a950eb9307d6b81df57b6" style="width: 100.0%; height: 100.0%;"><b>Victoria Station</b><br>Linha: Victoria</div>`)[0];
+                popup_aabd191df30b035912cd4b5ddb1c6e15.setContent(html_f812211f6f1a950eb9307d6b81df57b6);
+            
+        
+
+        marker_df1841c10c38f6e81253c6e6eee17fa5.bindPopup(popup_aabd191df30b035912cd4b5ddb1c6e15)
+        ;
+
+        
+    
+    
+                marker_df1841c10c38f6e81253c6e6eee17fa5.setIcon(icon_fb8b7b9351285e371249d2f5e2a74a0c);
+            
+    
+            var poly_line_c14c4cf5f72d54be4ce204884361f7d9 = L.polyline(
+                [[51.5308, -0.1238], [51.5154, -0.141], [51.5067, -0.1428], [51.4965, -0.1447]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_a6fc9037c40d8c12618ac2917937a0aa);
+        
+</script>
+</html>
