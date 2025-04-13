@@ -58,7 +58,3 @@ Trocas de linha: 0
 - [x] Algoritmo com recursão + memoization.
 - [x] Múltiplos modos de rota: menor, médio e maior tempo.
 - [x] Visualização em mapa interativo com Folium.
-
----
-
-🚀 Projeto feito com 💻 Python e ❤️ por [Seu Nome Aqui]
